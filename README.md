@@ -17,8 +17,8 @@ ROCKET_ENV=prod ./target/release/mytable-rest-example
 
 ## Load test
 
-As far as the service create file for the table **person.tbl**, it is
-necessary to clean it before each load test run. So use this command to start:
+As far as the service creates the file for the table **person.tbl**, it is
+necessary to clean it before each load test. So use this command to start:
 
 ```
 cargo build --release && rm -f person.tbl && ROCKET_ENV=prod ./target/release/mytable-rest-example
