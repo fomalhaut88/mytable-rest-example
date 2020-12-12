@@ -24,10 +24,9 @@ necessary to clean it before each load test. So use this command to start:
 cargo build --release && rm -f person.tbl && ROCKET_ENV=prod ./target/release/mytable-rest-example
 ```
 
-Load test is written in Python 3 with the library
-[requests](https://pypi.org/project/requests/), so it is needed to install it
-before execute. To start load test:
+Load test is done with [wrk](https://github.com/wg/wrk), so it is required
+to install it before testing. To start the load test:
 
 ```
-python load_test.py
+./load_test.sh
 ```
